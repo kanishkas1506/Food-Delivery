@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Food Delivery Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>🍴 Foodie</h1>
+    <p>Delicious food delivered to your door</p>
+</header>
+<div class="search">
+    <input type="text" id="search" placeholder="Search for food..." onkeyup="searchFood()">
+</div>
+<h2>Food Menu</h2>
+<div class="foods" id="foodList">
+    <div class="food">
+        <img src="c:\Users\user\Desktop\FSWD\biryani.jpg">
+        <h3>Chicken Biryani</h3>
+        <p>Biryani House</p>
+        <p>₹180</p>
+        <button onclick="addToCart('Chicken Biryani',180)">Add to Cart</button>
+    </div>
+    <div class="food">
+        <img src="c:\Users\user\Desktop\FSWD\pizza.jpg">
+        <h3>Chicken Pizza</h3>
+        <p>Pizza Corner</p>
+        <p>₹250</p>
+        <button onclick="addToCart('Chicken Pizza',250)">Add to Cart</button>
+    </div>
+    <div class="food">
+        <img src="c:\Users\user\Desktop\FSWD\burger.jpg">
+        <h3>Chicken Burger</h3>
+        <p>Burger Hub</p>
+        <p>₹150</p>
+        <button onclick="addToCart('Chicken Burger',150)">Add to Cart</button>
+    </div>
+    <div class="food">
+        <img src="c:\Users\user\Desktop\FSWD\fried c jpg.jpg">
+        <h3>Fried Chicken</h3>
+        <p>Chicken World</p>
+        <p>₹220</p>
+        <button onclick="addToCart('Fried Chicken',220)">Add to Cart</button>
+    </div>
+    <div class="food">
+        <img src="c:\Users\user\Desktop\FSWD\noodles.jpg">
+        <h3>Chicken Noodles</h3>
+        <p>Chinese Kitchen</p>
+        <p>₹160</p>
+        <button onclick="addToCart('Chicken Noodles',160)"> Add to Cart</button>
+    </div>
+    <div class="food">
+        <img src="c:\Users\user\Desktop\FSWD\cake.jpg">
+        <h3>Chocolate Cake</h3>
+        <p>Sweet Corner</p>
+        <p>₹120</p>
+        <button onclick="addToCart('Chocolate Cake',120)">Add to Cart</button>
+    </div>
+</div>
+<div class="cart">
+    <h2>🛒 Your Cart</h2>
+    <div id="cartItems">
+        <p>Cart is empty</p>
+    </div>
+    <h3>Total: ₹<span id="total">0</span></h3>
+    <input type="text" id="customerName" placeholder="Enter your name"><br><br>
+    <input type="text" id="address" placeholder="Enter your delivery address"><br><br>
+    <button onclick="placeOrder()"> Place Order</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
+
